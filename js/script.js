@@ -8,7 +8,7 @@ function addTask() {
   const dateInput = document.getElementById("dateInput");
 
   if (taskInput.value.trim() === "") {
-    alert("Please enter a task!");
+    alert("Masukin input task!");
     return;
   }
 
