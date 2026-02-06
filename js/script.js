@@ -27,7 +27,7 @@ function addTask() {
 }
 
 function deleteTask(id) {
-  if (confirm("Are you sure you want to delete this task?")) {
+  if (confirm("Apakah kamu yakin ingin menghapus task ini?")) {
     tasks = tasks.filter((task) => task.id !== id);
     renderTasks();
   }
@@ -43,11 +43,11 @@ function updateStatus(id, newStatus) {
 
 function deleteAllTasks() {
   if (tasks.length === 0) {
-    alert("No tasks to delete!");
+    alert("Tidak ada task yang dapat dihapus!");
     return;
   }
 
-  if (confirm(`Are you sure you want to delete all ${tasks.length} task(s)?`)) {
+  if (confirm(`Yakin nih mau hapus semua ${tasks.length} task?`)) {
     tasks = [];
     renderTasks();
   }
